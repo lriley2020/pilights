@@ -33,7 +33,7 @@ def _writeStatus(status):
 def cycleTo(desiredpos):
     totalpatterns = 9
     transistorpin = 17
-    buttonwait = 0.021943
+    buttonwait = 0.02195
     currpos = _checkStatus()
     if desiredpos < currpos:
         presses = totalpatterns - currpos
