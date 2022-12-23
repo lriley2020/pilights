@@ -10,7 +10,7 @@ if [ "$REPLY" != "y" ]; then
    exit
 fi
 echo "Copying config file..."
-mv ./pilights.service /etc/systemd/system/
+cp ./pilights.service /etc/systemd/system/
 echo "Reloading systemd daemon..."
 systemctl daemon-reload
 echo "Enabling service..."
