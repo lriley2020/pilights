@@ -46,5 +46,3 @@ def cycleTo(desiredpos):
     _writeStatus(currpos)
 
 
-cycleTo(9)
-
