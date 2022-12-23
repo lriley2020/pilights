@@ -26,8 +26,8 @@ def _checkStatus():
 
 
 def _writeStatus(status):
-    with open("./lightpos", "w+") as f:
-        f.write(status)
+    with open("./.lightpos", "w+") as f:
+        f.write(str(status))
 
 
 def cycleTo(desiredpos):
@@ -42,6 +42,9 @@ def cycleTo(desiredpos):
         presses = desiredpos - currpos
     for _ in range(presses):
         _simPress(transistorpin, buttonwait)
+    currpos = desiredpos
+    _writeStatus(currpos)
 
 
 cycleTo(9)
+
