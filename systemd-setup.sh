@@ -1,5 +1,5 @@
-#!/bin/sh
-if [ "$EUID" != 0 ];then
+#!/bin/bash
+if [ "$EUID" -ne 0 ];then
     echo "Please run this script as root"
     exit 1
 fi
