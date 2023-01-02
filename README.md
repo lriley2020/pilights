@@ -26,4 +26,4 @@ https://www.icloud.com/shortcuts/963fe4e9c4984912a7da0d90fec2f4a0
 
 You can now ask Siri to "Turn the Christmas lights on"!
 
-Note: you will need to change the URL in the "Get contents of" block for this to work!
+Note: you will need to change the URL in the "Get contents of" block for this to work.
